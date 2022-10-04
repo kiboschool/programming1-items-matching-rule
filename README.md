@@ -1,10 +1,17 @@
-## Rule Matching Items 
-In this practice, you need to count items matching a specific rule within a 2-D list.
+# Items Matching a Rule
 
-## Task & Guidelines
+In this practice, you need to count items matching a specific rule within a 2D list.
+
+You'll use a loop with a complicated condition, and practice accessing items
+inside of lists. It will help if you are to be able to visualize the list
+structure.
+
+## Your Task
+
 You are given an array items, where each items[i] = [typei, colori, namei] describes the type, color, and name of the ith item. You are also given a rule represented by two strings, ruleKey and ruleValue.
 
 The ith item is said to match the rule if one of the following is true:
+
 - ruleKey == "type" and ruleValue == typei.
 - ruleKey == "color" and ruleValue == colori.
 - ruleKey == "name" and ruleValue == namei.
@@ -14,11 +21,14 @@ Return the number of items that match the given rule.
 You need to implement your code to run successfully usin both examples in the starter code. Moreover, you are expected to provide at least 3 more example rules to run using your code.
 
 ## Starter Code
+
 Check the file called `main.py` where you a starter code to write your code.
 You are given input list examples also.
 
 ## Examples 
+
 #### Color Rule
+
 **Input:**  `items = [["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]], ruleKey = "color", ruleValue = "silver"`
 
 **Output:** 1
@@ -26,6 +36,7 @@ You are given input list examples also.
 **Explanation:** There is only one item matching the given rule, which is ["computer","silver","lenovo"].
 
 #### Type Rule
+
 **Input:** `items = [["phone","blue","pixel"],["computer","silver","phone"],["phone","gold","iphone"]], ruleKey = "type", ruleValue = "phone"`
 
 **Output:** 2
